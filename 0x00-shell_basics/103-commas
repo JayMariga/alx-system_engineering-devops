@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Ap1 | sed -E 's/$/,/; s/\.\.?,/./g' | sort -t/ -k2,2 -k1,1d | sed -E 's/,$/\//; s/,/\n/'
+ls -map
